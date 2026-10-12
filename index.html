@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Crypto Tracker</title>
+</head>
+<body>
+    <div class="restraining-container">
+        <header>
+            <div class="header-block">
+                <img src="assets/crypto-tracker-logo.png" alt="crypto tracker logo" id="tracker-logo">
+            </div>
+
+            <div class="header-block">
+                <h1>Crypto Tracker</h1>
+                <p class="subtitle">Live Market Cap & Price Action</p>
+            </div>
+
+            <div class="header-block">
+                <button id="refresh-btn">🔄 Refresh</button>
+                <span id="last-updated">Last update: --:--:--</span>
+            </div>
+        </header>
+
+        <section class="controls">
+            <input type="search" id="search-input" placeholder="Search by coin name or symbol">
+
+            <select id="filter-select">
+                <option value="all">All Cryptocurrencies</option>
+                <option value="top10">Top 10 by Market Cap</option>
+                <option value="gainers">24h Gainers</option>
+                <option value="losers">24h Losers</option>
+            </select>
+
+            <button id="favorites-toggle-btn">Favorites Only</button>
+        </section>
+
+        <div id="loader">
+            <p id="loading-status">Loading live crypto prices...</p>
+        </div>
+
+        <div class="table-container">
+            <table id="main-table">
+                <thead>
+                    <tr>
+                        <th>#</th>
+                        <th>Coin</th>
+                        <th id="sort-price" class="sortable">Price ⬍</th>
+                        <th>24h Change</th>
+                        <th>24h Volume / Market Cap</th>
+                        <th>Favorite</th>
+                    </tr>
+                </thead>
+                <tbody id="crypto-table-body"></tbody>
+            </table>
+        </div>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+</html>

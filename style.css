@@ -1,0 +1,174 @@
+* {
+    box-sizing: border-box;
+    font-family: system-ui, -apple-system, sans-serif;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #060c1b;
+    color: aliceblue;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center
+}
+
+.header-block {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    min-height: 190px;
+    border: 2px solid aliceblue;
+    padding: 30px;
+}
+
+#tracker-logo {
+    width: 120px;
+    height: 120px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+#refresh-btn, #favorites-toggle-btn {
+    padding: 15px;
+    border: none;
+    border-radius: 20px;
+    background-color: #073681;
+    color: aliceblue;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+#refresh-btn:hover, #favorites-toggle-btn:hover {
+    background-color: #0a4199;
+}
+
+#refresh-btn:active {
+    scale: 0.9;
+}
+
+button {
+    cursor: pointer;
+}
+
+#last-updated {
+    display: block;
+    padding: 15px;
+    border-radius: 20px;
+    background-color: #073681;
+    cursor: default;
+}
+
+.header-block h1, 
+.header-block button, 
+.header-block p, 
+.header-block span {
+    margin: 15px;
+}
+
+.controls {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+    margin: 30px 0;
+}
+
+input, select {
+    border: none;
+    border-radius: 20px;
+    outline: none;
+    background-color: #073681;
+    color: aliceblue;
+    padding: 10px;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+th, td {
+    border-bottom: 1px solid #1e293b;
+    padding: 20px 16px;
+}
+
+thead th {
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+tbody tr {
+    transition: 0.3s ease;
+}
+
+tbody tr:hover {
+    background-color: #0e1a38;
+}
+
+table img {
+    width: 24px; 
+    height: 24px; 
+    border-radius: 50%;
+}
+
+#sort-price {
+    background-color: #031025;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.coin-info {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.left-info {
+    text-align: left;
+}
+
+.right-info {
+    text-align: right;
+}
+
+.fav-btn {
+    border: none;
+    padding: 15px;
+    cursor: pointer;
+    background-color: #4d81d4;
+    border-radius: 20px;
+}
+
+img {
+    width: 20%;
+    max-width: 200px;
+    height: auto;
+
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+#loader {
+    background-color: #1e2b4b;
+}
+
+.hidden {
+    display: none !important;
+}
+
+#favorites-toggle-btn.active {
+    background-color: #3b82f6;
+    color: #ffffff;
+    font-weight: bold;
+}
+
+.restraining-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 24px;
+}
