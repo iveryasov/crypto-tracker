@@ -2,7 +2,7 @@
 
 A lightweight web application for tracking live cryptocurrency prices, market capitalization, and 24h trends.
 
-Live Demo: https://crypto-tracker-peach-nine.vercel.app/
+Live Demo: https://crypto-tracker-ivan-1ed4.vercel.app/
 
 ## Features
 
